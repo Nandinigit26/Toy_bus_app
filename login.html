@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Login | Toy Bus App</title>
+	<style>
+		* { box-sizing: border-box; }
+		body {
+			margin: 0;
+			min-height: 100vh;
+			display: grid;
+			place-items: center;
+			font-family: Arial, sans-serif;
+			background: linear-gradient(135deg, #fff7ed, #dbeafe);
+			color: #1f2937;
+		}
+		.card {
+			width: min(92%, 420px);
+			padding: 2.5rem;
+			background: #fff;
+			border-radius: 20px;
+			box-shadow: 0 16px 40px rgba(30, 41, 59, .15);
+		}
+		.logo { text-align: center; font-size: 3rem; }
+		h1 { margin: .5rem 0 .35rem; text-align: center; color: #1d4ed8; }
+		.subtitle { margin: 0 0 1.8rem; text-align: center; color: #64748b; }
+		label { display: block; margin: 1rem 0 .4rem; font-weight: bold; }
+		input {
+			width: 100%;
+			padding: .85rem 1rem;
+			border: 1px solid #cbd5e1;
+			border-radius: 10px;
+			font-size: 1rem;
+		}
+		input:focus { outline: 3px solid #bfdbfe; border-color: #2563eb; }
+		.options { display: flex; justify-content: space-between; align-items: center; margin: 1rem 0; font-size: .9rem; }
+		.options label { margin: 0; font-weight: normal; }
+		.options input { width: auto; margin-right: .35rem; }
+		a { color: #2563eb; text-decoration: none; }
+		a:hover { text-decoration: underline; }
+		button {
+			width: 100%;
+			padding: .9rem;
+			border: 0;
+			border-radius: 10px;
+			background: #2563eb;
+			color: #fff;
+			font-size: 1rem;
+			font-weight: bold;
+			cursor: pointer;
+		}
+		button:hover { background: #1d4ed8; }
+		.signup { margin: 1.5rem 0 0; text-align: center; color: #64748b; }
+	</style>
+</head>
+<body>
+	<main class="card">
+		<div class="logo" aria-hidden="true">🚌</div>
+		<h1>Welcome back</h1>
+		<p class="subtitle">Sign in to your Toy Bus account</p>
+
+		<form action="#" method="post">
+			<label for="email">Email address</label>
+			<input id="email" name="email" type="email" placeholder="you@example.com" required autocomplete="email">
+
+			<label for="password">Password</label>
+			<input id="password" name="password" type="password" placeholder="Enter your password" required autocomplete="current-password">
+
+			<div class="options">
+				<label><input type="checkbox" name="remember"> Remember me</label>
+				<a href="#forgot-password">Forgot password?</a>
+			</div>
+
+			<button type="submit">Sign in</button>
+		</form>
+		<p class="signup">New here? <a href="#signup">Create an account</a></p>
+	</main>
+</body>
+</html>
